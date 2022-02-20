@@ -23,7 +23,7 @@ body {
 }
 @for $i from 1 through 6 {
 	h#{$i} {
-		font-size: 64px / $i;
+		font-size: calc(64px / $i);
 		margin: 0;
 	}
 }

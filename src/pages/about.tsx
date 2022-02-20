@@ -20,7 +20,7 @@ export default () => {
         {name:'Samir Saber',title:['Department Chair','Digital Information and Technology'],imgUrl:'/images/board/samir.jpg',links:{linkedin:'samirsaber',phone:'7137187513',email:'samir.saber@hccs.edu'}}
     ];
     return (
-        <>
+        <Layout>
             <section style={{
                 textAlign: 'center',
                 backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/datacenter.jpg")',
@@ -88,6 +88,6 @@ export default () => {
                 <PersonSection people={boardMembers} title="Executive Board"/>
                 <PersonSection people={advisors} title="Program Advisors"/>
             </section>
-        </>
+        </Layout>
     );
 }
