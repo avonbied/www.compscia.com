@@ -25,7 +25,7 @@ const Header = () => {
             }
             <nav className={styles.navbar}>
                 { pages.map(
-                    (page, i) => (<Link to={ page.link } key={i}>{ page.caption }</Link>)
+                    (page, i) => (<Link to={ page.link } key={i} getProps={({isCurrent}) => (isCurrent ? {className:"active"} : {})}>{ page.caption }</Link>)
                 ) }
             </nav>
         </header>
