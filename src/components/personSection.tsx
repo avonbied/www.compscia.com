@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 import {Person, PersonCard} from './personCard';
-import styles from '../styles/components/personSection.module.scss';
+import * as styles from '../styles/components/personSection.module.scss';
 
 const PersonSection = (props: any) => {
     const {people, title} = props;

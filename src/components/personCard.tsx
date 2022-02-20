@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../styles/components/personCard.module.scss';
+import * as React from 'react';
+import * as styles from '../styles/components/personCard.module.scss';
 
 export type Person = {
     name: string,
