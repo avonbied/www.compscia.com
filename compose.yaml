@@ -1,0 +1,9 @@
+services:
+  site:
+    build: ./app
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+      - /app/.cache
+    ports:
+      - 9090:8000
