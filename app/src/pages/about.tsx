@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Layout from '@layouts/layout';
-import {Person} from '../components/personCard';
+import Layout from '@layouts/Layout';
+import {Person} from '../components/PersonCard';
 // import {ContentCard} from '../components/contentCard';
-import PersonSection from '../components/personSection';
+import PersonSection from '../components/PersonSection';
 
 export default () => {
     let boardMembers: Person[] = [

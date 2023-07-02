@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Person, PersonCard} from './personCard';
+import {Person, PersonCard} from './PersonCard';
 import * as styles from '../styles/components/personSection.module.scss';
 
 const PersonSection = (props: any) => {

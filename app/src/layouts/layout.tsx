@@ -2,8 +2,8 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/reset.scss';
 
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import * as styles from '../styles/components/layout.module.scss';
 
 export default class Layout extends React.Component<any, any> {    

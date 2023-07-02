@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Layout from '@layouts/layout';
-import App from '../components/app';
+import Layout from '@layouts/Layout';
+import App from '../components/App';
 
 export default () => {
     return(
