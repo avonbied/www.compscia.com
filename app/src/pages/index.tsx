@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../templates/layout';
+import Layout from '@layouts/layout';
 import App from '../components/app';
 
 export default () => {

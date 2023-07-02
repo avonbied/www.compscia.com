@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Layout from '../templates/layout';
+import Layout from '@layouts/layout';
 import {Person} from '../components/personCard';
 // import {ContentCard} from '../components/contentCard';
 import PersonSection from '../components/personSection';

@@ -5,7 +5,7 @@ const config: GatsbyConfig = {
 		title: `Computer Science Association`,
 		description: ``,
 		author: `@avonbied`,
-		siteUrl: 'hccdit.github.io'
+		siteUrl: 'https://hccdit.github.io'
 	},
 	graphqlTypegen: true,
 	plugins: [
