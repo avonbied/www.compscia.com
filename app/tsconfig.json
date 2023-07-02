@@ -28,6 +28,7 @@
 		/* Source Map Options */
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
+		"baseUrl": "./",
 		"paths": {
 			"@components/*": ["src/components/*"],
 			"@layouts/*": ["src/layouts/*"],

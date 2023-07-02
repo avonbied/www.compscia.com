@@ -5,9 +5,8 @@
 	"description": "Site of the Computer Science Association",
 	"scripts": {
 		"build": "gatsby build",
-		"develop": "gatsby develop",
-		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-		"start": "gatsby develop",
+		"develop": "gatsby develop -H 0.0.0.0",
+		"start": "gatsby develop -H 0.0.0.0",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
 		"typecheck": "tsc --noEmit",
@@ -38,10 +37,11 @@
 		"sass": "^1.49.8"
 	},
 	"devDependencies": {
+		"@types/node": "^20.3.3",
 		"@types/react": "^18.2.14",
 		"@types/react-dom": "^18.2.6",
 		"@types/react-helmet": "^6.1.5",
-		"prettier": "^2.5.1",
+		"gatsby-plugin-tsconfig-paths": "^1.0.6",
 		"typescript": "^5.1.6"
 	}
 }

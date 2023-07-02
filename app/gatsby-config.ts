@@ -5,11 +5,11 @@ const config: GatsbyConfig = {
 		title: `Computer Science Association`,
 		description: ``,
 		author: `@avonbied`,
-		siteUrl: 'https://hccdit.github.io'
+		siteUrl: 'https://hccdit.github.io',
 	},
 	graphqlTypegen: true,
 	plugins: [
-		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-tsconfig-paths',
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
 		'gatsby-plugin-sass',
