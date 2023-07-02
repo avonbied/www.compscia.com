@@ -1,9 +1,13 @@
-module.exports = {
+import type { GatsbyConfig } from 'gatsby';
+
+const config: GatsbyConfig = {
 	siteMetadata: {
 		title: `Computer Science Association`,
 		description: ``,
 		author: `@avonbied`,
+		siteUrl: 'hccdit.github.io'
 	},
+	graphqlTypegen: true,
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-transformer-sharp',
@@ -38,3 +42,5 @@ module.exports = {
 		},
 	],
 }
+
+export default config;

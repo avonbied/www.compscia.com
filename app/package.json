@@ -1,5 +1,5 @@
 {
-	"name": "www.compscia.com",
+	"name": "csa.hccs.edu",
 	"private": true,
 	"version": "1.0.0",
 	"description": "Site of the Computer Science Association",
@@ -10,6 +10,7 @@
 		"start": "gatsby develop",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
+		"typecheck": "tsc --noEmit",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
 	},
 	"repository": {
