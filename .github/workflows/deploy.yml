@@ -27,6 +27,7 @@ jobs:
           node-version: lts/fermium
           cache: 'yarn'
           cache-dependency-path: app/*.lock
+      - run: cd app
       - run: yarn install --frozen-lockfile # optional, --immutable
       - run: yarn build
       - name: Deploy to GitHub Pages
