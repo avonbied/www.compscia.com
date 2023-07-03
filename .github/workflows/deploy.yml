@@ -17,20 +17,26 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
-      - name: Install, build, and upload your site
-        uses: enriikke/gatsby-gh-pages-action@v2
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
-          deploy-branch: gh-pages
-          working-dir: ./app
+          node-version: lts/fermium
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile # optional, --immutable
+      - run: yarn build
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          uses: peaceiris/actions-gh-pages@v3
+          if: github.ref == 'refs/heads/main'
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./app/public
