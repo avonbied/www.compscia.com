@@ -26,23 +26,16 @@ jobs:
         with:
           node-version: lts/fermium
           cache: 'yarn'
+          cache-dependency-path: app/*.lock
       - run: yarn install --frozen-lockfile # optional, --immutable
   deploy:
+    needs: setup
     runs-on: ubuntu-latest
     permissions:
       contents: read
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: lts/fermium
-          cache: 'yarn'
-          cache-dependency-path: app/yarn.lock
-      - run: yarn install --frozen-lockfile # optional, --immutable
       - run: yarn build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
