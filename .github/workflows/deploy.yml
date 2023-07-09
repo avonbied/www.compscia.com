@@ -54,7 +54,7 @@ jobs:
       - name: Upload Build
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./public
+          path: app/public
   deploy:
     environment:
       name: github-pages
